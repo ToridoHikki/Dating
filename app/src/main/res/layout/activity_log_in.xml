@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SignUp_Activity">
+
+    <ImageView
+        android:id="@+id/ImageNameApp"
+        android:layout_width="303dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/dating" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/Tv_UserName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="UserName "
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/Et_UserName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Tv_PassWord"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Password  "
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/Et_PassWord"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/Btn_Login"
+        android:layout_width="150dp"
+        android:text="Log in"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_height="60dp" />
+        />
+</LinearLayout>
