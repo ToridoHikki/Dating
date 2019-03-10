@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".SignUp_Activity">
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/ImageNameApp"
@@ -20,14 +19,14 @@
         android:orientation="horizontal"
         android:layout_marginTop="50dp">
         <TextView
-            android:id="@+id/Tv_UserName"
+            android:id="@+id/tv_mssv_login"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="UserName "
+            android:text="MSSV "
             android:textSize="25dp"/>
         <EditText
-            android:id="@+id/Et_UserName"
+            android:id="@+id/et_mssv_login"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"/>
@@ -37,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/Tv_PassWord"
+            android:id="@+id/tv_password_login"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -45,18 +44,18 @@
             android:text="Password  "
             android:textSize="25dp" />
         <EditText
-            android:id="@+id/Et_PassWord"
+            android:id="@+id/et_password_login"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <Button
-        android:id="@+id/Btn_Login"
+        android:id="@+id/bt_login_login"
         android:layout_width="150dp"
         android:text="Log in"
         android:textSize="20dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:layout_height="60dp" />
-        />
+    />
 </LinearLayout>

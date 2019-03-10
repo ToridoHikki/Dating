@@ -126,11 +126,11 @@
                 android:text="Fat"/>
         </RadioGroup>
     </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:text="Skin tone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Skin tone"/>
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
