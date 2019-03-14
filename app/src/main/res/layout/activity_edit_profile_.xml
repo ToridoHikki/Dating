@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     android:orientation="vertical">
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_height="85dp"
+        android:src="@mipmap/ic_launcher" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -50,21 +51,6 @@
             android:textSize="18dp"
             android:layout_height="wrap_content"
             android:text="About me"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="18dp"
-            android:layout_height="wrap_content"
-            android:text="MSSV"/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="2"

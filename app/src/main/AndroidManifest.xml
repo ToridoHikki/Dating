@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Login_Activity" />
         <activity android:name=".EditProfile_Activity" />
-        <activity android:name=".Register_Activity"></activity>
+        <activity android:name=".Register_Activity" />
+        <activity android:name=".IdealPerson"></activity>
     </application>
 
 </manifest>
