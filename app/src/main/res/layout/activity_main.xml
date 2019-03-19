@@ -1,29 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/c"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/a" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a good day!"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp">
-
-        <Button
-            android:id="@+id/bt_login_main"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Log in" />
-
-        <Button
-            android:id="@+id/bt_register_main"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:clickable="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/cv_login_main"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorSimple"
+                android:textSize="25dp"
+                android:text="LOG IN" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Register" />
+            android:clickable="true"
+            android:id="@+id/cv_register_main"
+            android:layout_marginLeft="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorSimple"
+                android:textSize="25dp"
+                android:text="REGISTER" />
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 </LinearLayout>

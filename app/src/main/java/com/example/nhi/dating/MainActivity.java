@@ -3,18 +3,19 @@ package com.example.nhi.dating;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button bt_login, bt_register;
+    private CardView bt_login, bt_register;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bt_login = findViewById(R.id.bt_login_main);
-        bt_register = findViewById(R.id.bt_register_main);
+        bt_login = findViewById(R.id.cv_login_main);
+        bt_register = findViewById(R.id.cv_register_main);
 
         bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
