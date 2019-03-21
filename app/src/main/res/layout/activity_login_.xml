@@ -30,7 +30,7 @@
             android:orientation="horizontal">
             <EditText
                 android:id="@+id/et_email_login"
-                android:hint="Email"
+                android:hint="MSSV"
                 android:textSize="20dp"
                 android:layout_width="0dp"
                 android:layout_weight="2"
@@ -44,6 +44,7 @@
                 android:id="@+id/et_password_login"
                 android:hint="Password"
                 android:textSize="20dp"
+                android:inputType="textPassword"
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="wrap_content"/>

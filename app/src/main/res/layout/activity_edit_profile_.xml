@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="15dp"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/tvStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="STEP 2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ED717F"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif" />
     <LinearLayout
+        android:layout_below="@id/tvStep2"
+        android:id="@+id/llbithday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -18,23 +27,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="18dp"
-            android:text="Display Name"/>
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:inputType="text"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="18dp"
-            android:layout_height="wrap_content"
-            android:text="Birthday"/>
+            android:text="Ngày Sinh:"/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="2"
@@ -42,6 +35,42 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
+        android:layout_below="@+id/llbithday"
+        android:id="@+id/llhometown"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Quê Quán:"/>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/llhometown"
+        android:id="@+id/llaboutyou"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -50,22 +79,26 @@
             android:layout_weight="1"
             android:textSize="18dp"
             android:layout_height="wrap_content"
-            android:text="About me"/>
+            android:text="Miêu tả bản thân:"/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/llaboutyou"
+        android:id="@+id/llloveQuote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
+
             android:textSize="18dp"
             android:layout_height="wrap_content"
-            android:text="Height"/>
+            android:text="Châm ngôn tình yêu: "/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="2"
@@ -73,6 +106,44 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/llloveQuote"
+        android:id="@+id/lllovertype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Mẫu người lí tưởng: "/>
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="White"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Tan"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Dark"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lllovertype"
+        android:id="@+id/llfaculty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -112,29 +183,25 @@
                 android:text="Fat"/>
         </RadioGroup>
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:text="Skin tone"/>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/llfaculty"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:id="@+id/cv_constep2"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="25dp">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="White"/>
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Tan"/>
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Dark"/>
-    </RadioGroup>
-</LinearLayout>
+            android:layout_gravity="center"
+            android:text="Continue"
+            android:textColor="@color/colorSimple"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
